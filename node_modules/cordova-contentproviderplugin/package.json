@@ -1,0 +1,65 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "c:\\Users\\adeka\\Desktop\\koprint\\cordova-ContentProviderPlugin",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "c:\\Users\\adeka\\Desktop\\koprint\\cordova-ContentProviderPlugin",
+        "spec": "c:\\Users\\adeka\\Desktop\\koprint\\cordova-ContentProviderPlugin",
+        "type": "directory"
+      },
+      "C:\\Users\\adeka\\Desktop\\koprint\\PhoneGap\\koprint\\node_modules"
+    ]
+  ],
+  "_from": "..\\..\\cordova-ContentProviderPlugin",
+  "_id": "cordova-contentproviderplugin@1.0.0",
+  "_inCache": true,
+  "_location": "/cordova-contentproviderplugin",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "c:\\Users\\adeka\\Desktop\\koprint\\cordova-ContentProviderPlugin",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "c:\\Users\\adeka\\Desktop\\koprint\\cordova-ContentProviderPlugin",
+    "spec": "c:\\Users\\adeka\\Desktop\\koprint\\cordova-ContentProviderPlugin",
+    "type": "directory"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "file:..\\..\\cordova-ContentProviderPlugin",
+  "_shasum": "260e97447d59210b0af0da01ef293f4ac86fae79",
+  "_shrinkwrap": null,
+  "_spec": "c:\\Users\\adeka\\Desktop\\koprint\\cordova-ContentProviderPlugin",
+  "_where": "C:\\Users\\adeka\\Desktop\\koprint\\PhoneGap\\koprint\\node_modules",
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/phearme/cordova-ContentProviderPlugin/issues"
+  },
+  "dependencies": {},
+  "description": "A generic Cordova plugin for querying Content Providers on Android devices.",
+  "devDependencies": {},
+  "directories": {
+    "example": "example"
+  },
+  "gitHead": "02108c8bab817de84c6162d6dbe03e3c6fe1ec7c",
+  "homepage": "https://github.com/phearme/cordova-ContentProviderPlugin#readme",
+  "license": "ISC",
+  "main": "index.js",
+  "name": "cordova-contentproviderplugin",
+  "optionalDependencies": {},
+  "readme": "## cordova-ContentProviderPlugin\r\n\r\nA generic Cordova plugin for querying Content Providers on Android devices.\r\n\r\n## Android Content Providers\r\n\r\nA complete list of available content providers in Android can be found here:\r\nhttp://developer.android.com/reference/android/provider/package-summary.html\r\n\r\nContent Providers in Android can be usefull to query information such as SMS, Contacts, Calendar, and much more. Some applications use Content Providers to store their data, and this data can be queried by any third party app.\r\n\r\n## Note About Permissions\r\n\r\nMost content providers require to add special permissions in `AndroidManifest.xml` file. For example, if you want to query the `content://sms/` provider, you will need to add the following line in the manifest (see Android SDK for more info):\r\n\r\n    <uses-permission android:name=\"android.permission.READ_SMS\" />\r\n\r\nYou can add permissions through the `plugin.xml` file of the Cordova plugin. There is an example of how this can be achieved in comments of the `plugin.xml` of this plugin. The same way, this can probably be achieved by adding the same content to the `config.xml` of your Cordova project (although I haven't tested it).\r\n\r\n## Installation\r\n\r\nThrough Cordova Repo (stable):\r\n\r\n    cordova plugin add com.phearme.cordovaplugin.contentproviderplugin\r\n\r\nThrough Github Repo (latest):\r\n\r\n    cordova plugin add https://github.com/phearme/cordova-ContentProviderPlugin\r\n\r\n## Example Usage\r\n\r\n    window.plugins.contentproviderplugin.query({\r\n\t\t\tcontentUri: \"content://sms/inbox\",\r\n\t\t\tprojection: [\"address\", \"date\", \"body\"],\r\n\t\t\tselection: null,\r\n\t\t\tselectionArgs: null,\r\n\t\t\tsortOrder: \"date DESC\"\r\n\t\t}, function (data) {\r\n\t\t\tconsole.log(JSON.stringify(data));\r\n\t\t}, function (err) {\r\n\t\t\tconsole.log(\"error query\");\r\n\t\t});\r\n\r\n\r\n\r\n#### Licence\r\nLicensed under the Apache License, Version 2.0 (the \"License\");\r\nyou may not use this file except in compliance with the License.\r\nYou may obtain a copy of the License at\r\n\r\n    http://www.apache.org/licenses/LICENSE-2.0\r\n\r\nUnless required by applicable law or agreed to in writing, software\r\ndistributed under the License is distributed on an \"AS IS\" BASIS,\r\nWITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\r\nSee the License for the specific language governing permissions and\r\nlimitations under the License.\r\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phearme/cordova-ContentProviderPlugin.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.0"
+}

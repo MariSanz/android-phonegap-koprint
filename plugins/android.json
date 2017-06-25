@@ -1,0 +1,34 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.koprint"
+        },
+        "com.phearme.cordovaplugin.ContentProviderPlugin": {
+            "PACKAGE_NAME": "com.koprint"
+        },
+        "cordova-plugin-android-permissions": {
+            "PACKAGE_NAME": "com.koprint"
+        },
+        "cordova-sqlite-storage": {
+            "PACKAGE_NAME": "com.koprint"
+        },
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "com.koprint"
+        },
+        "cordova-plugin-hybrid": {
+            "PACKAGE_NAME": "com.koprint"
+        }
+    },
+    "dependent_plugins": {
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "com.koprint"
+        }
+    }
+}
